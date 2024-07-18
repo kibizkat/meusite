@@ -19,32 +19,17 @@
             <input type="email" id="email" name="email" required>
             <button type="submit">Gerar QR Code</button>
         </form>
-        <div id="qrcode"></div>
+        <div id="qrcode-container" style="display: none;">
+            <h2>QR Code Gerado</h2>
+            <div id="qrcode"></div>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Nossa Senhora Aparecida. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('cadastro-form');
-            const qrCodeContainer = document.getElementById('qrcode');
-
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                const nome = document.getElementById('nome').value;
-                const email = document.getElementById('email').value;
-
-                // Gerar o QR Code com base nos dados do formulário
-                new QRCode(qrCodeContainer, {
-                    text: `Nome: ${nome}\nE-mail: ${email}`,
-                    width: 200,
-                    height: 200
-                });
-            });
-        });
-    </script>
+    <script src="scripts/qrcode.min.js"></script> <!-- Inclua o script aqui -->
+    <script src="scripts/cadastro.js"></script>
 </body>
 </html>
