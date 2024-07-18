@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const stripe = Stripe('pk_test_51PdxfURxV6IwpmDrtgeE9TxYZoDziXj7VyaCpLwLgdahN9RRbqrNZ6sqnt4RkRL1HJCgTnhaT6iDJLxKztmqN26400aaoku3Ww'); // Substitua 'YOUR_PUBLISHABLE_KEY' pela sua chave pública do Stripe
+    const stripe = Stripe('pk_live_51PdxfURxV6IwpmDrha2SKIRsy3kb0Usuk3oYHyW1ldE0wUrEibSCMgNgvUbgoRQ6gQOJXCnqbxyrMUiyZJhR2zpb00aKxpYWHC'); // Substitua 'YOUR_PUBLISHABLE_KEY' pela sua chave pública do Stripe
     const comprarAdultoBtn = document.getElementById('comprar-adulto');
     const comprarCriancaBtn = document.getElementById('comprar-crianca');
 
