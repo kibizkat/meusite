@@ -35,10 +35,18 @@
                     <a></a>
                 <p>Adultos: R$ 120,00</p>
                     <a></a>
-                    <button class="btn" id="comprar-adulto">Comprar Ingresso Adulto</button>
+                    <stripe-buy-button
+  buy-button-id="buy_btn_1PdyCXRxV6IwpmDrDlHO1alb"
+  publishable-key="pk_live_51PdxfURxV6IwpmDrha2SKIRsy3kb0Usuk3oYHyW1ldE0wUrEibSCMgNgvUbgoRQ6gQOJXCnqbxyrMUiyZJhR2zpb00aKxpYWHC"
+>
+</stripe-buy-button>
                 <p>Crianças: R$ 80,00</p>
                     <a></a>
-                    <button class="btn" id="comprar-crianca">Comprar Ingresso Adulto</button>
+                    <stripe-buy-button
+  buy-button-id="buy_btn_1PdyCXRxV6IwpmDrDlHO1alb"
+  publishable-key="pk_live_51PdxfURxV6IwpmDrha2SKIRsy3kb0Usuk3oYHyW1ldE0wUrEibSCMgNgvUbgoRQ6gQOJXCnqbxyrMUiyZJhR2zpb00aKxpYWHC"
+>
+</stripe-buy-button>
             </section>
 
             <section id="Sobre">
@@ -57,7 +65,8 @@
         <footer>
             <p>&copy; 2024 Nossa Senhora Aparecida. Todos os direitos reservados.</p>
         </footer>
-
+        <script async src="https://js.stripe.com/v3/buy-button.js">
+        </script>
         <script src="https://js.stripe.com/v3/"></script>
         <script src="scripts.js"></script>
 
