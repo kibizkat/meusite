@@ -1,0 +1,88 @@
+/* Resetando alguns estilos padrões */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+main {
+    padding: 2rem;
+    background: #ffffff;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Estilo do botão */
+.btn {
+    font-size: 1rem; /* Aumenta o tamanho da fonte */
+    padding: .5rem 1rem; /* Adiciona espaço interno ao redor do texto */
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mãozinha */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn:hover {
+    background-color: #ff6347; /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
