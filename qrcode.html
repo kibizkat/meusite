@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+</head>
+<body>
+    <header>
+        <h1>QR Code do Ingresso</h1>
+    </header>
+
+    <main>
+        <div id="qrcode-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nossa Senhora Aparecida. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="qrcode.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nome = localStorage.getItem('nome');
+            const cpf = localStorage.getItem('cpf');
+
+            const qrCodeContainer = document.getElementById('qrcode-container');
+            const qr = new QRCode(qrCodeContainer, {
+                text: `Nome: ${nome}\nCPF: ${cpf}`,
+                width: 200,
+                height: 200
+            });
+
+            // Limpar localStorage
+            localStorage.removeItem('nome');
+            localStorage.removeItem('cpf');
+            localStorage.removeItem('tipo');
+        });
+    </script>
+</body>
+</html>
