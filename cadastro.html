@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -33,64 +33,5 @@
     <script src="qrcode.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcode"></script>
     <script src="cadastro.js"></script>
-</body>
-</html>
- -->
-
- <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="   styles.css">
-</head>
-<body>
-    <header>
-        <h1>Cadastro para Receber o Ingresso</h1>
-    </header>
-
-    <main>
-        <form id="cadastro-form">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" required>
-            <input type="hidden" id="tipo-ingresso" name="tipo-ingresso" value="">
-            <button type="submit">Comprar</button>
-        </form>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Nossa Senhora Aparecida. Todos os direitos reservados.</p>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const tipoIngresso = urlParams.get('tipo');
-            document.getElementById('tipo-ingresso').value = tipoIngresso;
-
-            const form = document.getElementById('cadastro-form');
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const nome = document.getElementById('nome').value;
-                const cpf = document.getElementById('cpf').value;
-                const tipo = document.getElementById('tipo-ingresso').value;
-
-                // Salvar dados no localStorage para usar após a compra
-                localStorage.setItem('nome', nome);
-                localStorage.setItem('cpf', cpf);
-                localStorage.setItem('tipo', tipo);
-
-                // Redirecionar para a página de pagamento
-                if (tipo === 'adulto') {
-                    window.location.href = 'https://kibizkat.github.io/meusite/compra.html?preco=12000';
-                } else if (tipo === 'crianca') {
-                    window.location.href = 'https://kibizkat.github.io/meusite/compra.html?preco=8000';
-                }
-            });
-        });
-    </script>
 </body>
 </html>
