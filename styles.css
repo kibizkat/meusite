@@ -323,21 +323,21 @@ li {
     }
 
     .icon-container {
-        gap: 20px; /* Reduzir o espaço entre ícones em telas menores */
+        gap: 10px; /* Reduzir o espaço entre ícones em telas menores */
     }
 
     .icon {
-        width: 60px;
-        height: 60px;
-        flex: 0 1 60px; /* Ajustar a flexibilidade dos ícones */
+        width: 40px;
+        height: 40px;
+        flex: 0 1 40px; /* Ajustar a flexibilidade dos ícones */
     }
 
     .icon a {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .icon i {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .pacote-grid {
