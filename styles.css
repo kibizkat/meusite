@@ -327,9 +327,9 @@ li {
     }
 
     .icon {
-        width: 40px;
-        height: 40px;
-        flex: 0 1 40px; /* Ajustar a flexibilidade dos ícones */
+        width: 60px;
+        height: 60px;
+        flex: 0 1 50px; /* Ajustar a flexibilidade dos ícones */
     }
 
     .icon a {
